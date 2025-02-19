@@ -381,7 +381,26 @@ nav {
 .plano h3 {
     font-size: 32px;
 }
-
+.plano span {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--green-primary);
+}
+#price {
+    text-align: center;
+    
+}
+.plano-info {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .plano-info li::before {
+    content: "✔️"; /* Você pode trocar por outro ícone */
+    color: var(--green-primary);
+    font-size: 1.2em;
+    margin-right: 8px;
+  }
 .faq {
     padding: 3rem 1rem;
     background-color: #f9f9f9;
@@ -631,6 +650,7 @@ footer {
         letter-spacing: 0;
         
     }
+    
     .last-cta {
         max-width: 430px;
         
