@@ -790,6 +790,7 @@ footer {
         max-width: 700px;
         min-width: 430px;
         width: 100%;
+        display: flex;
     }
     .beneficio {
         max-width: 300px;
