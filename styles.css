@@ -858,7 +858,7 @@ footer {
         
     }
     .plano {
-        width: 300px;
+        width: 85%;
         text-align: center;
     }
     .plano .btn {
@@ -880,7 +880,7 @@ footer {
       }
     .last-cta {
         max-width: 768px;
-        
+        min-width: 430px;
         width: 100%;
         padding: 15px;
     }
@@ -900,7 +900,7 @@ footer {
         justify-content: center;
         text-align: center;
         max-width: 768px;
-        
+        min-width: 430px;
         width: 100%;
     }
 
