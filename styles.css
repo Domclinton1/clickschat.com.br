@@ -680,10 +680,10 @@ footer {
 
 
 /* Para telas menores, com scroll horizontal */
-@media (max-width: 768px) {
+@media screen and (min-width: 430px) and (max-width: 768px) {
     body {
         max-width: 768px;
-        
+        min-width: 430px;
         width: 100%;
         
     }
@@ -693,10 +693,10 @@ footer {
     }
     header {
         max-width: 768px;
-        
+        min-width: 430px;
         width: 100%;
         display: flex;
-        
+        flex-direction: column;
         gap: 3rem;
     }
     header .btn {
@@ -747,17 +747,25 @@ footer {
     
     .testimonial {
         max-width: 768px;
-        
+        min-width: 430px;
         width: 100%;
         text-align: center;
-        padding: 15px;
+        justify-content: center;
+        padding: 20px;
+        
     }
     .testimonial-infos {
         max-width: 768px;
-        
+        min-width: 430px;
+        padding: 20px;
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         align-items: stretch;
+        justify-content: center;
+    }
+    .testimonial-info {
+        max-width: 80%;
     }
     .beneficios {
         max-width: 768px;
@@ -768,7 +776,7 @@ footer {
     }
     .beneficios-box {
         max-width: 768px;
-        
+        min-width: 430px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -779,8 +787,8 @@ footer {
         width: 100%;
     }
     .scroll-wrapper {
-        max-width: 768px;
-        
+        max-width: 700px;
+        min-width: 430px;
         width: 100%;
     }
     .beneficio {
@@ -805,9 +813,11 @@ footer {
     .funcionalidades-content {
         display: flex;
         flex-direction: column;
+        max-width: 768px;
+        min-width: 430px;
     }
     .funcionalidade-box {
-        max-width: 768px;
+        max-width: 80%;
 
         width: 100%;
         padding: 15px;
@@ -820,6 +830,8 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        max-width: 768px;
+        min-width: 430px;
     }
     .para-quem-content {
         display: grid;
@@ -827,7 +839,8 @@ footer {
     }
     .planos {
         max-width: 768px;
-        
+        min-width: 430px;
+        text-align: center;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -836,6 +849,8 @@ footer {
         padding: 15px;
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         
     }
     .planos-content .btn:hover {
@@ -848,7 +863,8 @@ footer {
     }
     .plano .btn {
         width: 100%;
-        font-size: 17px;
+        font-size: 16px;
+        gap: 1rem;
     }
     .plano-info {
         list-style: none;
