@@ -488,6 +488,9 @@ footer {
     background-color: var(--blue-primary);
     padding: 40px;
     color: var(--white-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 
@@ -588,6 +591,7 @@ footer {
     .scroll-wrapper {
         max-width: 430px;
         display: flex;
+        flex-direction: row;
         width: 100%;
     }
     .beneficio {
@@ -787,10 +791,11 @@ footer {
         width: 100%;
     }
     .scroll-wrapper {
-        max-width: 700px;
+        max-width: 768px;
         min-width: 430px;
         width: 100%;
         display: flex;
+        flex-direction: row;
     }
     .beneficio {
         max-width: 300px;
